@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import DetailSummary from './detailSummary';
 import ChapterDetails from './chapterDetails';
-import btnMusic from '../assets/btnMusic.mp3';
+// import btnMusic from '../assets/btnMusic.mp3';
 
 const ChapterWrapper = () => {
   const { id } = useParams();
@@ -19,7 +19,7 @@ const ChapterWrapper = () => {
 
   return (
     <div className="book-wrapper">
-      <audio ref={chapterFlipRef} src={btnMusic} />
+      <audio ref={chapterFlipRef} src={"./assets/btnMusic.mp3"} />
 
       <div className="book open">
         <div className="leftpage">

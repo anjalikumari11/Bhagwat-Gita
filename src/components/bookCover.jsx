@@ -1,11 +1,10 @@
 import React, { useRef, useState } from 'react';
 import './bookcover.css';
-import image1 from '../assets/chakar.png';
 import Chapters from './chapters';
 import ChapterDetails from './chapterDetails';
 import TableOfContent from './Content';
 import DetailSummary from './detailSummary';
-import BtnMusic from '../assets/btnMusic.mp3';
+// import BtnMusic from '../assets/btnMusic.mp3';
 
 function BookCover() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,10 +37,10 @@ function BookCover() {
 
   return (
     <div className="book-wrapper">
-      <audio ref={chapRef} src={BtnMusic} />
+      <audio ref={chapRef} src={"./assets/btnMusic.mp3"} />
       <div className={`book ${isOpen ? 'open' : "close"}`}>
         <div className="bookCover" onClick={openBook}>
-          <img src={image1} className="chakar" alt="Chakra" />
+          <img src={"./assets/chakar.png"} className="chakar" alt="Chakra" />
           <h2>श्रीमद्भगवद्गीता</h2>
           <h3>BHAGAVADGEETA</h3>
         </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import bgMusic from './assets/bgMusic.mp3';
 
 const MainLayout = ({ children }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -26,7 +25,7 @@ const MainLayout = ({ children }) => {
 
   return (
     <div>
-      <audio ref={audioRef} src={bgMusic} loop />
+      <audio ref={audioRef} src={"./assets/bgMusic.mp3"} loop />
       {children}
     </div>
   );
